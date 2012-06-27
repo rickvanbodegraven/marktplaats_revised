@@ -25,14 +25,27 @@ margin: 3px 0 0 0;
 margin: 3px 0 0 0;
 }
 
-#search_advert_bar label {
-	
-}
-
 #search_advert_bar  {
 margin: 0 0 0 0;
 float: right;
-padding: 0;
+padding: 3px 0 0 0;
+}
+
+form
+{
+	margin:0;
+}
+form input.btn
+{
+	float:left;
+
+	margin:0;
+		margin-right:10px;
+}
+.CommonTextTxt
+{
+	min-width:300px;
+	height:100px;
 }
 
 </style>
@@ -68,8 +81,8 @@ padding: 0;
 				
 			<div id="search_advert_bar">
 				<form method="post" action="advertisements">
-					<label>Advertentie zoeken: <input type="text"
-						name="advertisement_search_keyword" /></label>
+					<input type="text" placeholder="Zoek advertentie"
+						name="advertisement_search_keyword" />
 				</form>
 			</div>				
 				

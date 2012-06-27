@@ -21,5 +21,5 @@ ${Advertisement.advertiser.woonplaats}
 <p>${Advertisement.description}</p>
 
 
-<a href="mailto:${Advertisement.advertiser.email}?subject=Reactie via marktplaats_revised op '${Advertisement.title}'&body=Artikellocatie: http://127.0.0.1:8080/marktplaats_revised/advertisements?id=${Advertisement.id}">Neem contact op</a>
+<a class="btn btn-primary" href="mailto:${Advertisement.advertiser.email}?subject=Reactie via marktplaats_revised op '${Advertisement.title}'&body=Artikellocatie: http://127.0.0.1:8080/marktplaats_revised/advertisements?id=${Advertisement.id}">Neem contact op</a>
 <%@ include file="footer.jsp" %>
