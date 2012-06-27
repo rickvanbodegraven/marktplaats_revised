@@ -3,11 +3,25 @@
 	uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@include file="header.jsp" %>
 
-<ul>
+<h1>Alle gebruikers</h1>
+
+<table class="table table-striped">
+	<thead>
+	<tr>
+		<th>#</th>
+		<th>Gebruikersnaam</th>
+		<th>Email</th>
+		<th>Woonplaats</th>
+	</tr>
+	</thead>
 	<c:forEach var="user" items="${Users}">
-		<li><a href="users?id=${user.id}"> ${user.username} </a>
-			<p>${user.email}</p></li>
+	<tr style="cursor: pointer;" onclick="window.location = 'users?id=${user.id}'">
+		<td>${user.id}</td>
+		<td>${user.username}</td>
+		<td>${user.email}</td>
+		<td>${user.woonplaats}</td>
+		</tr>	
 	</c:forEach>
-</ul>
+</table>
 
 <%@include file="footer.jsp" %>

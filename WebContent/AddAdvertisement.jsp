@@ -3,6 +3,8 @@
 
 <%@include file="header.jsp" %>
 
+<h1>Advertentie toevoegen</h1>
+
 		<a class="terugLink" href="advertisements">Terug</a>
 		<form action="adminAdvertisement" method="POST">
 			<div class="FormRow">

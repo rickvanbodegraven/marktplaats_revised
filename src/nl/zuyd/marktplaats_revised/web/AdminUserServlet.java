@@ -65,6 +65,9 @@ public class AdminUserServlet extends HttpServlet
 				u.setWoonplaats(request.getParameter("Woonplaats"));
 				u.setPassword(request.getParameter("Password"));
 				userRepo.saveUser(u);
+				
+				this.getServletContext().getRequestDispatcher("/users")
+				.forward(request, response);
 			}
 		}
 		else

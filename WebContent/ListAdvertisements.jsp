@@ -3,21 +3,37 @@
 	uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@include file="header.jsp"%>
 
-<a href="AddAdvertisement.jsp">Voeg een advertentie toe</a>
+<h1>Advertenties</h1>
 
-<ul>
+<table class="table table-striped">
+	<thead>
+	<tr>
+		<th>#</th>
+		<th>Titel</th>
+		<th>Prijs</th>
+		<th>Geplaatst door</th>
+		<th>Locatie</th>
+		</tr>
+	</thead>
 	<c:forEach var="advertisement" items="${Advertisements}">
-		<li><c:choose>
+	<tr style="cursor: pointer;" onclick="window.location = 'advertisements?id=${advertisement.id}'">
+		<td>${advertisement.id}</td>
+		<td>
+			<c:choose>
 				<c:when test="${advertisement.status == 1}">
 				${advertisement.title} - <b>VERKOCHT</b>
 				</c:when>
 				<c:otherwise>
-					<a href="advertisements?id=${advertisement.id}">${advertisement.title}</a>
+					${advertisement.title}
 				</c:otherwise>
 			</c:choose>
-			<p>${advertisement.description}</p></li>
+		</td>
+		<td>${advertisement.price}</td>
+		<td>${advertisement.advertiser}</td>
+		<td>${advertisement.advertiser.woonplaats}</td>
+		</tr>	
 	</c:forEach>
-</ul>
+</table>
 
 
 <%@include file="footer.jsp"%>
