@@ -8,8 +8,8 @@
     <p><p><strong>Please Enter Your Password: </strong>
     <input type="password" size="15" name="j_password">
     <p><p>
-    <input type="submit" value="Submit">
-    <input type="reset" value="Reset">
+    <input class="btn btn-primary" type="submit" value="Submit">
+    <input class="btn" type="reset" value="Reset">
 </form>
 
 <%@include file="footer.jsp" %>

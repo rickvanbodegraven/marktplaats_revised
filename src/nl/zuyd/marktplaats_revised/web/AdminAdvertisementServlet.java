@@ -92,12 +92,12 @@ public class AdminAdvertisementServlet extends HttpServlet
 			
 			if (advertToDelete.getAdvertiser().getUsername()
 					.equals(request.getUserPrincipal().getName()))
-			{
-				response.getWriter().write(
-						"Advert with title " + advertToDelete.getTitle()
-								+ " is going to be deleted");
-				
-				advertRepo.deleteAdvertisement(advertToDelete);
+			{				
+				advertRepo.deleteAdvertisement(advertToDelete);				
+
+				this.getServletContext()
+						.getRequestDispatcher("/advertisements")
+						.forward(request, response);
 			}
 		}
 		else if ((p = request.getParameter("sold_id")) != null)

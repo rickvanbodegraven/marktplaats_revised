@@ -25,7 +25,7 @@
 					<textarea class="CommonTextTxt" name="Description"></textarea>
 				</div>
 			</div>
-			<input type="submit" name="AddAdvertisement" value="Opslaan" />
+			<input class="btn btn-primary" type="submit" name="AddAdvertisement" value="Opslaan" />
 		</form>
 		
 <%@include file="footer.jsp" %>

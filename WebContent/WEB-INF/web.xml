@@ -23,7 +23,8 @@
     <display-name>SecurityConstraint</display-name>
     <web-resource-collection>
       <web-resource-name>style</web-resource-name>
-      <url-pattern>/style.css</url-pattern>
+      <url-pattern>/css/*</url-pattern>
+      <url-pattern>/js/*</url-pattern>
     </web-resource-collection>
     <user-data-constraint>
       <transport-guarantee>NONE</transport-guarantee>

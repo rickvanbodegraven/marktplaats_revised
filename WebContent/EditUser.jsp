@@ -30,13 +30,12 @@
 				value="${User.password}">
 		</div>
 	</div>
-	<input type="submit" value="Opslaan">
-</form>
-
-<form action="adminUser" method="POST">
+	<input class="btn btn-primary" type="submit" value="Opslaan">
+	</form>
+	<form method="POST" action="adminUser">
 	<input type="hidden" name="delete_id" value="${User.id}" /> <input
 		type="hidden" name="delete_username" value="${User.username}" /> <input
-		type="submit" value="Verwijderen">
-</form>
+		type="submit" class="btn" value="Verwijderen">
+	</form>
 
 <%@include file="footer.jsp"%>

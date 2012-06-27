@@ -9,8 +9,8 @@
     <input type="text" size="15" name="u_email"><p><p>
     <p><p><strong>Please Enter Your Home location: </strong>
     <input type="text" size="15" name="u_home"><p><p>
-    <input type="submit" value="Submit">
-    <input type="reset" value="Reset">
+    <input class="btn btn-primary" type="submit" value="Submit">
+    <input class="btn" type="reset" value="Reset">
 </form>
 
 <%@include file="footer.jsp"%>

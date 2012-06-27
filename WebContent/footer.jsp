@@ -1,6 +1,8 @@
+
+			</div> <!--  span9  -->
 		</div><!-- container -->
-		<div id="footer">
-			Copyright &copy; 2012 - Twan, Nick, Chris, Rick - JAVA EE
-		</div>
-	</body>
+	
+	<script src="/marktplaats_revised/js/jquery.js"></script>
+	<script src="/marktplaats_revised/js/bootstrap.min.js"></script>
+</body>
 </html>

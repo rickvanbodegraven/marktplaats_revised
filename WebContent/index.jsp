@@ -1,8 +1,12 @@
 <%@include file="header.jsp"%>
 
-<ul>
-	<li><a href="AddAdvertisement.jsp">Voeg een advertentie toe</a></li>
-	<li><a href="advertisements">Alle advertenties</a></li>
-	<li><a href="users">Alle gebruikers</a></li>
-</ul>
+
+        
+          <div class="hero-unit">
+            <h1>Welkom!</h1>
+            <p>Marktplaats Revised is een uit de kluiten gewassen schoolproject. Het is tot stand gekomen met de intentie om JAVA EE te leren gebruiken.</p>
+            <p>Tegenwoordig is Marktplaats Revised gewoonweg niet meer uit het dagelijks leven weg te denken. Stel je eens voor dat je niet meer op je ooie-dooie gemakje alle advertenties zou kunnen napluizen op koopjes! Onvoorstelbaar, nietwaar?</p>
+            <p><a class="btn btn-primary btn-large" href="advertisements">Alle advertenties &raquo;</a></p>
+          </div>
+            
 <%@include file="footer.jsp"%>

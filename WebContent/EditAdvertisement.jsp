@@ -26,16 +26,15 @@
 					<textarea class="CommonTextTxt" name="Description">${Advertisement.description}</textarea>
 				</div>
 			</div>
-			<input type="submit" value="Opslaan">
+			<input class="btn btn-primary" type="submit" value="Opslaan">
 		</form>
-
-		<form action="adminAdvertisement" method="POST">
+		<form method="POST" action="adminAdvertisement">
 			<input type="hidden" name="delete_id" value="${Advertisement.id}" />
-			<input type="submit" value="Verwijderen">
+			<input class="btn" type="submit" value="Verwijderen">
 		</form>
-		<form action="adminAdvertisement" method="POST">
-			<input type="hidden" name="sold_id" value="${Advertisement.id}" /> <input
-				type="submit" value="Markeren als verkocht">
+		<form method="POST" action="adminAdvertisement">
+			<input type="hidden" name="sold_id" value="${Advertisement.id}" />
+			<input class="btn" type="submit" value="Markeren als verkocht">
 		</form>
 		
 <%@include file="footer.jsp" %>
