@@ -30,7 +30,7 @@ public class signupServlet extends HttpServlet {
 	{
 		 User user = new User();
 		 user.setEmail(request.getParameter("u_email"));
-		 user.setPassword(request.getParameter("u_email"));
+		 user.setPassword(request.getParameter("u_password"));
 		 user.setUsername(request.getParameter("u_username"));
 		 user.setWoonplaats(request.getParameter("u_home"));
 		 userRepo.addUser(user);
